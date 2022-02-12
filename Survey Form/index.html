@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<section>
+    <header>
+			<h1 id="title">Formulário</h1>
+			<p id="description">Formulário de pesquisa referente ao Replit</p>
+		</header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nome</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Digite seu nome"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Digite seu Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Idade</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Idade"
+      />
+    </div>
+    <div class="form-group">
+      <p>Qual alternativa abaixo descreve sua situação atual?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Escoha uma função</option>
+        <option value="estudante">Estudante</option>
+        <option value="estagio">Estagiario</option>
+        <option value="trabalho">Trabalho em tempo integral</option>
+        <option value="prefereNa">Prefere não dizer</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Você recomendaria o Replit para um amigo?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Com certeza</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Talvez</label>
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+			/>Não tenho certeza</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Qual é o seu recurso favorito do Replit?
+      </p>
+      <select id="dropdown" name="mostLike" class="form-control" required>
+        <option disabled selected value>Selecione uma Opcão</option>
+        <option value="projects">Projetos</option>
+        <option value="community">Comunidade</option>
+        <option value="openSource">Código aberto</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        O que você gostaria de ver melhorado?
+        <span >(Marque todos as alternativas que se aplicarem)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="add-more-languages"
+          type="checkbox"
+          class="input-checkbox"
+        />Adicionar novos idiomas para a interface</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="new-languages"
+          type="checkbox"
+          class="input-checkbox"
+        />Adicionar novas linguages de programação</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="new-themes"
+          type="checkbox"
+          class="input-checkbox"
+        />Novos temas para o editor de códigos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="community"
+          type="checkbox"
+          class="input-checkbox"
+        />Interação da comunidade em projetos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Fórum</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Algum comentário ou sugestão?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Digite seu comentário aqui..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+		</section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
